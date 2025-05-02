@@ -16,6 +16,8 @@ const StyledMainButton = styled(Button)`
   justify-content: center;
   align-items: center;
   background-color: #ffd843;
+  border: 1px solid #fcc638;
+  padding: 6px 12px;
   &.FIE_topbar-save-wrapper {
     background-color: #ffd843;
   }

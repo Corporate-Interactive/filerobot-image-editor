@@ -25,7 +25,7 @@ const UndoButton = ({ margin }) => {
       title={t('undoTitle')}
       margin={margin}
     >
-      <Undo />
+      <Undo size={12} />
     </StyledHistoryButton>
   );
 };

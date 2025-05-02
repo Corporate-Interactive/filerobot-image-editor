@@ -65,7 +65,6 @@ const StyledTabs = styled.div`
   gap: 16px;
   overflow-y: auto;
   max-height: 100%;
-
   [data-phone='true'] & {
     display: flex;
     padding: 0;

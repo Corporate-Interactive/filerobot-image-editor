@@ -48,9 +48,23 @@ const StyledControlButtonsWrapper = styled.div`
 const StyledHistoryButton = styled(IconButton)`
   margin: ${({ margin }) => margin ?? "0 4px"};
   color: black;
+  &.FIE_topbar-undo-button {
+    border-right: 1px solid #dedede;
+    padding-right: 10px;
+    padding-left: 10px;
+      padding-top: 6px;
+    padding-bottom: 6px;
+    border-radius: 0px;
+  }
+  &.FIE_topbar-redo-button {
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
   svg {
     color: ${({ theme: { palette }, disabled }) =>
-      !disabled ? palette[PC.IconsPrimary] : palette[PC.IconsMuted]};
+      !disabled ? "black" : palette[PC.IconsMuted]};
   }
 `;
 
@@ -71,19 +85,27 @@ const StyledDimensionsLabel = styled(Label)`
 
 const StyledSmallButton = styled(IconButton)`
   padding: 8px;
+  border-radius: 0px !important;
   &.FIE_topbar-zoom-out-btn {
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
     border-right: 1px solid #dedede;
+    padding-left: 10px;
+    padding-right: 10px;
   }
   &.FIE_topbar-zoom-in-btn {
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
     border-left: 1px solid #dedede;
+    padding-left: 10px;
+    padding-right: 10px;
   }
   svg {
-    color: ${({ theme: { palette }, showBackButton }) =>
-      showBackButton ? palette[PC.IconsPrimary] : palette[PC.IconsMuted]};
+    color: black;
+  }
+
+  &:hover {
+    background-color: transparent;
+  }
+
+  &:focus {
+    background-color: transparent;
   }
 `;
 
@@ -104,10 +126,12 @@ const StyledFlexCenterAlignedContainer = styled.div`
     order: 2;
   }
 `;
-
+//  PERCENTAGE LABEL
 const StyledZoomPercentageLabel = styled(Label)`
   cursor: pointer;
   color: black;
+  padding: 0px 10px;
+  font-size: 12px;
 `;
 
 const StyledBackButtonLabel = styled.span`
@@ -145,7 +169,7 @@ const StyledResizeOnSaveLabel = styled(Label)`
 
 const StyledHistoryButtons = styled.div`
   display: flex;
-  gap: 6px;
+  // gap: 6px;
   border: 1px solid #dedede;
   border-radius: 20px;
 `;

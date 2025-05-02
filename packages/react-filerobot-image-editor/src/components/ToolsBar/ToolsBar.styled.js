@@ -33,6 +33,7 @@ const StyledToolsBarItems = styled.div`
   `}
 `;
 
+// HORIZONTAL TOOLBAR
 const StyledToolsBarItemButton = styled.div(
   ({ theme, isPhoneScreen }) => `
     display: flex;
@@ -40,8 +41,8 @@ const StyledToolsBarItemButton = styled.div(
     border-radius: 2px;
     align-items: center;
     justify-content: center;
-    padding: 8px 12px;
-    border: 1px solid white;
+    padding: 6px 12px;
+    border: 0.062rem solid white;
     svg {
       color: black;
     }
@@ -53,13 +54,13 @@ const StyledToolsBarItemButton = styled.div(
 
     &:hover {
       border-radius: 20px;
-      border: 1px solid #dedede;
-    }
+      border: 0.062rem solid black;
+     }
 
     &[aria-selected='true'] {
       background-color: #dedede;
       border-radius: 20px;
-      border: 1px solid #dedede;
+       border: 0.062rem solid #a8a8a8;
       * {
         color: black;
       }
@@ -79,9 +80,15 @@ const StyledToolsBarItemButton = styled.div(
   `
 );
 
+
+// HORIZONTAL TOOLBAR > TEXT LABEL
 const StyledToolsBarItemButtonLabel = styled(Label)(
   ({ theme, isPhoneScreen }) => css`
     color: ${theme.palette[PC.TextPrimary]};
+    font-size: 0.6875rem;
+    line-height: 14px;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 0.04rem;
     ${isPhoneScreen && theme.typography.font[FV.LabelExtraSmallUp]};
   `
 );

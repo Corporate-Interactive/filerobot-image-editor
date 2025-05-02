@@ -22,6 +22,9 @@ const StyledCarouselItem = styled.li`
   display: inline-block;
   list-style-type: none;
   user-select: none;
+  font-family: 'Open Sans', sans-serif;
+  letter-spacing: 0.04rem;
+  font-size: 11px;
 `;
 
 const arrowsCommonStyles = css`

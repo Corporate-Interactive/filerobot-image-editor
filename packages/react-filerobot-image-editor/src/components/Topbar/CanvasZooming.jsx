@@ -106,7 +106,7 @@ const CanvasZooming = ({ showBackButton }) => {
         showBackButton={showBackButton}
         className="FIE_topbar-zoom-out-btn"
       >
-        <MinusOutline />
+        <MinusOutline size={8}/>
       </StyledSmallButton>
       <StyledZoomPercentageLabel
         title={t('toggleZoomMenuTitle')}
@@ -128,7 +128,7 @@ const CanvasZooming = ({ showBackButton }) => {
         showBackButton={showBackButton}
         className="FIE_topbar-zoom-in-btn"
       >
-        <PlusOutline />
+        <PlusOutline size={8}/>
       </StyledSmallButton>
       <Menu
         anchorEl={zoomingMenuAnchorEl}
@@ -146,7 +146,6 @@ const CanvasZooming = ({ showBackButton }) => {
           </MenuItem>
         ))}
       </Menu>
-
     </StyledZoomingWrapper>
   );
 };

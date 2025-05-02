@@ -7,7 +7,7 @@ const StyledTabItem = styled.div(
     width: 72px;
     min-height: 66px;
     padding: 4px 2px;
-    border-radius: 8px;
+    border-radius: 10px;
     display: flex;
     flex-direction: column;
     gap: 6px;
@@ -31,12 +31,12 @@ const StyledTabItem = styled.div(
     }
 
     &:hover {
-      border: 2px solid #dedede;
+      border: 0.062rem solid black;
     }
 
     &[aria-selected='true'] {
       background: #dedede;
-
+      border: 0.062rem solid black;
       * {
         color: black;
       }
@@ -47,10 +47,10 @@ const StyledTabItem = styled.div(
 const StyledTabItemLabel = styled(Label)(
   ({ theme }) => `
   color: black;
-  font-size: 12px;
-  line-height: 14px;
+ font-size: 0.6875em;
+   line-height: 14px;
   font-family: 'Open Sans', sans-serif;
-
+  letter-spacing: 0.04rem;
   span {
     white-space: normal;
   }
