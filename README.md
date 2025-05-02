@@ -1,4 +1,3 @@
-# My Project
 
 This is a preview of the UI.
 
