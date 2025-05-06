@@ -33,7 +33,6 @@ const StyledModalTitle = styled(modalTitle)(
 const StyledModalActions = styled(ModalActions)`
   gap: 12px;
   padding: 24px;
-
   .SfxButton-root {
     flex: 1;
     margin: 0;

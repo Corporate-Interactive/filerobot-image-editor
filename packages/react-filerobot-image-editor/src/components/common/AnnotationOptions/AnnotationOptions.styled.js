@@ -60,7 +60,11 @@ const StyledOptionPopupContent = styled.div`
     `}
 
   * {
-    font-family: 'Roboto', sans-serif;
+  color: black;
+  font-size: 11px;
+   line-height: 14px;
+  font-family: 'Open Sans', sans-serif;
+  letter-spacing: 0.04rem;
   }
 `;
 
@@ -120,7 +124,7 @@ const StyledIconWrapper = styled.div(
       active &&
       `
       border-radius: 8px;
-      border-color: #dedede;
+      border-color: #c9c9c9;
       background-color: #dedede;
 
         * {

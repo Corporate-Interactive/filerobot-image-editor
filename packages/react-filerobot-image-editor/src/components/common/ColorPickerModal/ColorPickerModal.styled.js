@@ -1,6 +1,6 @@
-import { Modal, ModalActions as SfxModalActions } from '@scaleflex/ui/core';
-import styled from 'styled-components';
-import { Color as PC } from '@scaleflex/ui/utils/types/palette';
+import { Modal, ModalActions as SfxModalActions } from "@scaleflex/ui/core";
+import styled from "styled-components";
+import { Color as PC } from "@scaleflex/ui/utils/types/palette";
 
 const ColorPickerModal = styled(Modal)`
   max-width: 350px;
@@ -12,7 +12,7 @@ const ColorPickerWrap = styled.div`
     padding: 0;
     box-shadow: none;
     border: none;
-    ${({ hideModalTitle }) => hideModalTitle && 'padding-top: 12px;'}
+    ${({ hideModalTitle }) => hideModalTitle && "padding-top: 12px;"}
   }
 
   .SfxColorPicker-action {
@@ -20,7 +20,7 @@ const ColorPickerWrap = styled.div`
     gap: 12px;
 
     .SfxColorPicker-select {
-      width: 100px;
+      width: 90px;
     }
     .SfxInput-root {
       width: 190px !important;
@@ -28,7 +28,8 @@ const ColorPickerWrap = styled.div`
   }
 
   .SfxColorPicker-icon {
-    color: ${({ theme: { palette } }) => palette[PC.IconsPrimary]};
+    color: black;
+    padding-right: 10px;
   }
 
   .SfxColorPicker-range-picker,
@@ -44,7 +45,22 @@ const ModalActions = styled(SfxModalActions)`
   .SfxButton-root {
     flex: 1;
     margin: 0;
-    height: 40px;
+    height: 30px;
+    color: black;
+    border-radius: 50px;
+    background-color: white;
+    border: 1px solid #c9c9c9;
+    line-height: 14px;
+    font-family: "Open Sans", sans-serif;
+    letter-spacing: 0.04rem;
+
+    & > span > span {
+      font-size: 0.75rem;
+    }
+
+    &:hover {
+      background-color: #dedede;
+    }
   }
 `;
 

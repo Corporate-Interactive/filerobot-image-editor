@@ -16,16 +16,19 @@ const StyledMainButton = styled(Button)`
   justify-content: center;
   align-items: center;
   background-color: #ffd843;
+  & > span > span {
+    font-size: 0.75rem !important;
+  }
+  &:hover {
+    background-color: #fcc638;
+  }
   border: 1px solid #fcc638;
   padding: 6px 12px;
-  &.FIE_topbar-save-wrapper {
-    background-color: #ffd843;
-  }
   &.FIE_watermark-add-button {
     background-color: white;
     border: 1px solid black;
   }
-  &.FIE_topbar-save-button: hover {
+  &.fie_topbar-save-button: hover {
     background-color: #fcc638;
   }
   &.FIE_watermark-add-button:hover {
@@ -35,6 +38,7 @@ const StyledMainButton = styled(Button)`
   }
   color: black;
   border-radius: 20px;
+
 `;
 
 const StyledMenu = styled(Menu)`

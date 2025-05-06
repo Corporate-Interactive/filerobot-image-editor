@@ -86,7 +86,7 @@ const ButtonWithMenu = ({
       ref={buttonRef}
       $noMargin={noMargin}
     >
-        {/* <StyledMainButton
+        <StyledMainButton
           className={`${className}-button`}
           color={color}
           size={buttonSize}
@@ -95,7 +95,7 @@ const ButtonWithMenu = ({
           disabled={disabled}
         >
          {label === "Save" ? "Done" : label || t('saveAs')}
-        </StyledMainButton> */}
+        </StyledMainButton>
       </StyledButtonWrapper>
       {hasMultipleMenuItems && (
         <StyledMenu

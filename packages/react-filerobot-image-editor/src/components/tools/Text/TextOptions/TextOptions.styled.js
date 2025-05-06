@@ -14,7 +14,9 @@ const StyledFontSizeInput = styled(Input)`
   width: 72px;
   border: 1px solid #a8a8a8;
   border-radius: 50px;
-  font-size: 11px;
+ input {
+    font-size: 11px !important;
+  }
 `;
 
 const StyledToolsWrapper = styled.div`

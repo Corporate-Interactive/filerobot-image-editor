@@ -14,7 +14,7 @@ const StyledTabItem = styled.div(
     background: white;
     align-items: center;
     justify-content: center;
-    border: 1px solid #dedede;
+    border: 1px solid #c9c9c9;
     [data-phone='true'] & {
       margin-bottom: 0;
       height: 50px;
@@ -36,7 +36,7 @@ const StyledTabItem = styled.div(
 
     &[aria-selected='true'] {
     background: #dedede;
-     border: 0.062rem solid #a8a8a8;
+     border: 0.062rem solid #c9c9c9;
       * {
         color: black;
       }
@@ -47,7 +47,7 @@ const StyledTabItem = styled.div(
 const StyledTabItemLabel = styled(Label)(
   ({ theme }) => `
   color: black;
- font-size: 0.6875em;
+  font-size: 0.6875em;
    line-height: 14px;
   font-family: 'Open Sans', sans-serif;
   letter-spacing: 0.04rem;

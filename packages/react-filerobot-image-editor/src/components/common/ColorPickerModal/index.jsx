@@ -57,10 +57,10 @@ const ColorPickerModal = ({
       </ModalContent>
 
       <Styled.ModalActions>
-        <Button color="basic" onClick={onClose}>
+        <Button onClick={onClose} style={{ fontSize: "11px" }}>
           {t('cancel')}
         </Button>
-        <Button color="primary" onClick={onApply}>
+        <Button onClick={onApply}>
           {t('apply')}
         </Button>
       </Styled.ModalActions>

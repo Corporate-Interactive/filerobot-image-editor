@@ -62,6 +62,16 @@ const StyledHistoryButton = styled(IconButton)`
     padding-right: 10px;
     padding-left: 10px;
   }
+  &.FIE_topbar-undo-button:hover {
+    background-color: #dedede;
+    border-bottom-left-radius: 50px;
+    border-top-left-radius: 50px;
+  }
+  &.FIE_topbar-redo-button:hover {
+    background-color: #dedede;
+    border-bottom-right-radius: 50px;
+    border-top-right-radius: 50px;
+  }
   svg {
     color: ${({ theme: { palette }, disabled }) =>
       !disabled ? "black" : palette[PC.IconsMuted]};
