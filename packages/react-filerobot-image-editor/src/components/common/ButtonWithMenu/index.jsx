@@ -81,12 +81,12 @@ const ButtonWithMenu = ({
   return (
     <>
       <StyledButtonWrapper
-        className={`${className}-wrapper`}
-        style={wrapperStyle}
-        ref={buttonRef}
-        noMargin={noMargin}
-      >
-        <StyledMainButton
+      className={`${className}-wrapper`}
+      style={wrapperStyle}
+      ref={buttonRef}
+      $noMargin={noMargin}
+    >
+        {/* <StyledMainButton
           className={`${className}-button`}
           color={color}
           size={buttonSize}
@@ -95,7 +95,7 @@ const ButtonWithMenu = ({
           disabled={disabled}
         >
          {label === "Save" ? "Done" : label || t('saveAs')}
-        </StyledMainButton>
+        </StyledMainButton> */}
       </StyledButtonWrapper>
       {hasMultipleMenuItems && (
         <StyledMenu

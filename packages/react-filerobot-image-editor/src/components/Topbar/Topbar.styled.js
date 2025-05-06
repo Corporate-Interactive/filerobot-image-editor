@@ -110,7 +110,7 @@ const StyledSmallButton = styled(IconButton)`
 `;
 
 const StyledFlexCenterAlignedContainer = styled.div`
-  width: ${({ showBackButton }) => (showBackButton ? "318px" : "384px")};
+  width: ${({ $showBackButton }) => ($showBackButton ? "318px" : "384px")};
   height: 32px;
   display: block;
   width: 100%;

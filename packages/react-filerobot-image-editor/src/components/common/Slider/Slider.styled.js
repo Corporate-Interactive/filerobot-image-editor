@@ -11,13 +11,12 @@ const StyledSlider = styled(Slider)`
   margin-bottom: ${({ noMargin }) => (noMargin ? '' : '16px')};
 
   .SfxSlider-thumb {
-    background-color: ${({ theme: { palette } }) =>
-      palette[PC.AccentStateless]};
+    background-color: black;
   }
 
   .SfxSlider-Track {
     height: 2px;
-    color: ${({ theme: { palette } }) => palette[PC.AccentStateless]};
+    color: black;
   }
 
   .SfxSlider-rail {

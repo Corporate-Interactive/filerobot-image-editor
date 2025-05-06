@@ -5,12 +5,16 @@ import Select from '@scaleflex/ui/core/select';
 
 const StyledFontFamilySelect = styled(Select)`
   width: 160px;
-  border: 1px solid black;
+  border: 1px solid #a8a8a8;
+  border-radius: 50px;
+  font-size: 11px;
 `;
 
 const StyledFontSizeInput = styled(Input)`
   width: 72px;
-  border: 1px solid black;
+  border: 1px solid #a8a8a8;
+  border-radius: 50px;
+  font-size: 11px;
 `;
 
 const StyledToolsWrapper = styled.div`

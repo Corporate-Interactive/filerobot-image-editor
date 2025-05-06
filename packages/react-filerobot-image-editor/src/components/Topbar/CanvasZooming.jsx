@@ -128,7 +128,7 @@ const CanvasZooming = ({ showBackButton }) => {
         showBackButton={showBackButton}
         className="FIE_topbar-zoom-in-btn"
       >
-        <PlusOutline size={8}/>
+        <PlusOutline size={9}/>
       </StyledSmallButton>
       <Menu
         anchorEl={zoomingMenuAnchorEl}

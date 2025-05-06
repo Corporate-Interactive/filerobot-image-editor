@@ -31,12 +31,12 @@ const StyledTabItem = styled.div(
     }
 
     &:hover {
-      border: 0.062rem solid black;
+     border: 0.062rem solid #a8a8a8;
     }
 
     &[aria-selected='true'] {
-      background: #dedede;
-      border: 0.062rem solid black;
+    background: #dedede;
+     border: 0.062rem solid #a8a8a8;
       * {
         color: black;
       }

@@ -29,7 +29,7 @@ const Topbar = ({ toggleMainMenu }) => {
   const isPhoneScreen = usePhoneScreen(320);
 
   return (
-    <StyledTopbar className="FIE_topbar" isPhoneScreen={isPhoneScreen}>
+    <StyledTopbar className="FIE_topbar" $isPhoneScreen={isPhoneScreen}>
       <StyledMainButtonsWrapper className="FIE_topbar-buttons-wrapper">
         <StyledMenuIconButton
           className="FIE_tabs_toggle_btn"
@@ -44,7 +44,7 @@ const Topbar = ({ toggleMainMenu }) => {
 
       <StyledFlexCenterAlignedContainer
         className="FIE_topbar-center-options"
-        showBackButton={showBackButton}
+        $showBackButton={showBackButton}
       >
         <ImageDimensionsAndDisplayToggle
           showBackButton={showBackButton}

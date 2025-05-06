@@ -7,7 +7,7 @@ import { Menu, MenuItem, MenuItemIcon } from "@scaleflex/ui/core";
 const StyledButtonWrapper = styled.div`
   display: flex;
   align-items: center;
-  margin: ${({ noMargin }) => (noMargin ? "0" : "12px")};
+  margin: ${({ $noMargin }) => ($noMargin ? "0" : "12px")};
   flex-shrink: 0;
 `;
 

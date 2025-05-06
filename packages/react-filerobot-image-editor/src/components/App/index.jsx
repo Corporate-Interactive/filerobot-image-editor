@@ -347,7 +347,7 @@ const App = () => {
     <StyledAppWrapper
       className={ROOT_CONTAINER_CLASS_NAME}
       data-phone={isPhoneScreen}
-      showTabsDrawer={showTabsDrawer}
+      $showTabsDrawer={showTabsDrawer}
       ref={pluginRootRef}
       $size={rootSize}
     >

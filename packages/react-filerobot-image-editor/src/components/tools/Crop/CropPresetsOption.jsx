@@ -160,6 +160,9 @@ const CropPresetsOption = ({ anchorEl, onClose }) => {
         onClose={onClose}
         open={Boolean(anchorEl)}
         position="top"
+        style={{
+          borderRadius: '10px',
+        }}
         popperOptions={{
           modifiers: [
             {

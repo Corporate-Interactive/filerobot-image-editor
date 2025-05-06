@@ -1,7 +1,7 @@
 /** External Dependencies */
-import { Input, Label } from '@scaleflex/ui/core';
-import styled from 'styled-components';
-import { FontVariant as FV } from '@scaleflex/ui/utils/types/typography';
+import { Input, Label } from "@scaleflex/ui/core";
+import styled from "styled-components";
+import { FontVariant as FV } from "@scaleflex/ui/utils/types/typography";
 
 const StyledHSVOptions = styled.div`
   display: flex;
@@ -30,6 +30,10 @@ const StyledSliderContainer = styled.div`
 `;
 
 const StyledSliderLabel = styled(Label)`
+  color: black;
+  font-size: 0.6875em;
+  line-height: 14px;
+  font-family: "Open Sans", sans-serif;
   ${({ theme }) => theme.typography.font[FV.LabelExtraSmallUp]};
 `;
 
@@ -40,11 +44,15 @@ const StyledSliderWrapper = styled.div`
 
 const StyledSliderInput = styled(Input)`
   display: inline-block;
-  width: 40px;
+  width: 35px;
   height: 28px;
   padding: 6px 2px;
   margin-left: 10px;
   border: none;
+  color: black;
+  font-size: 0.6875em;
+  line-height: 14px;
+  font-family: "Open Sans", sans-serif;
 
   .SfxInput-Base {
     text-align: center;
