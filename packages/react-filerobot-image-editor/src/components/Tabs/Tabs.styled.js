@@ -14,7 +14,7 @@ const StyledTabItem = styled.div(
     background: white;
     align-items: center;
     justify-content: center;
-    border: 1px solid #c9c9c9;
+    border: 0.01rem solid #dedede;
     [data-phone='true'] & {
       margin-bottom: 0;
       height: 50px;
@@ -31,7 +31,7 @@ const StyledTabItem = styled.div(
     }
 
     &:hover {
-     border: 0.062rem solid #a8a8a8;
+     border: 1px solid #d6d6d6;
     }
 
     &[aria-selected='true'] {

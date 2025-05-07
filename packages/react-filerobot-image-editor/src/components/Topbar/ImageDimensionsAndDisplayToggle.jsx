@@ -70,21 +70,7 @@ const ImageDimensionsAndDisplayToggle = ({ showBackButton, isPhoneScreen }) => {
 
   return (
     <StyledImageOptionsButtons isPhoneScreen={isPhoneScreen}>
-      <StyledDimensionsLabel title={t('imageDimensionsHoverTitle')}>
-        {`${dimensions.width} x ${dimensions.height} px`}
-      </StyledDimensionsLabel>
-
       <StyledDimensionsButtons>
-        <StyledSmallButton
-          color="basic"
-          onMouseDown={isResetted ? undefined : showOriginalImage}
-          onTouchStart={isResetted ? undefined : showOriginalImage}
-          disabled={isResetted}
-          showBackButton={showBackButton}
-          title={t('showImageTitle')}
-        >
-          <Compare />
-        </StyledSmallButton>
         {!disableZooming && (
           <>
             <Separator />

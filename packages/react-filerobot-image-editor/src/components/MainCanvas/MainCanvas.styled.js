@@ -26,7 +26,6 @@ const StyledOrignalImage = styled.img`
 
 const StyledCanvasNode = styled(Stage)`
   outline: none;
-  background: ${({ theme }) => theme.palette['bg-hover']};
 `;
 
 export { CanvasContainer, StyledOrignalImage, StyledCanvasNode };

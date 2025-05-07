@@ -54,13 +54,13 @@ const StyledToolsBarItemButton = styled.div(
 
     &:hover {
       border-radius: 20px;
-      border: 0.062rem solid #a8a8a8;
+      border: 0.062rem solid #d6d6d6;
      }
 
     &[aria-selected='true'] {
       background-color: #dedede;
       border-radius: 20px;
-       border: 0.062rem solid #a8a8a8;
+       border: 0.062rem solid #dedede;
       * {
         color: black;
       }

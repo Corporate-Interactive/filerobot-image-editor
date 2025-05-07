@@ -30,17 +30,15 @@ const Topbar = ({ toggleMainMenu }) => {
 
   return (
     <StyledTopbar className="FIE_topbar" $isPhoneScreen={isPhoneScreen}>
-      <StyledMainButtonsWrapper className="FIE_topbar-buttons-wrapper">
-        <StyledMenuIconButton
-          className="FIE_tabs_toggle_btn"
-          size={isPhoneScreen ? 'sm' : 'lg'}
-          color="basic"
-          onClick={() => toggleMainMenu(true)}
-        >
-          {(props) => <Menu {...props} />}
-        </StyledMenuIconButton>
-        {showBackButton ? <BackButton /> : <SaveButton />}
-      </StyledMainButtonsWrapper>
+
+       {/* UNDO REDO BUTTON */}
+      <StyledControlButtonsWrapper>
+        <StyledHistoryButtons className="FIE_topbar-history-buttons">
+          <UndoButton margin="0" showBackButton={showBackButton} />
+          <RedoButton margin="0" showBackButton={showBackButton} />
+        </StyledHistoryButtons>
+        {/* {showBackButton ? <SaveButton /> : <CloseButton />} */}
+      </StyledControlButtonsWrapper>
 
       <StyledFlexCenterAlignedContainer
         className="FIE_topbar-center-options"
@@ -53,14 +51,22 @@ const Topbar = ({ toggleMainMenu }) => {
       </StyledFlexCenterAlignedContainer>
 
           {/* <ResetButton margin="0" showBackButton={showBackButton} /> */}
-      <StyledControlButtonsWrapper>
-        <StyledHistoryButtons className="FIE_topbar-history-buttons">
-          <UndoButton margin="0" showBackButton={showBackButton} />
-          <RedoButton margin="0" showBackButton={showBackButton} />
-        </StyledHistoryButtons>
 
-        {/* {showBackButton ? <SaveButton /> : <CloseButton />} */}
-      </StyledControlButtonsWrapper>
+
+      {/* SAVE / DONE BUTTON */}
+      <StyledMainButtonsWrapper className="FIE_topbar-buttons-wrapper">
+        <StyledMenuIconButton
+          className="FIE_tabs_toggle_btn"
+          size={isPhoneScreen ? 'sm' : 'lg'}
+          color="basic"
+          onClick={() => toggleMainMenu(true)}
+        >
+          {(props) => <Menu {...props} />}
+        </StyledMenuIconButton>
+        {showBackButton ? <BackButton /> : <SaveButton />}
+        
+      </StyledMainButtonsWrapper>
+
     </StyledTopbar>
   );
 };

@@ -83,10 +83,29 @@ const StyledDrawer = styled(Drawer)`
   }
 `;
 
+// added
+
+const StyledCanvasWrapper = styled.div`
+  flex-grow: 1;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 300px; 
+`;
+
+const StyledToolsBarContainer = styled.div`
+  background: #fff;
+  padding: 8px 12px;
+  z-index: 5;
+`;
+
+
 export {
   StyledAppWrapper,
   StyledMainContent,
   StyledCanvasAndTools,
   StyledTabs,
   StyledDrawer,
+  StyledCanvasWrapper,
+  StyledToolsBarContainer,
 };

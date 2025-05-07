@@ -37,6 +37,8 @@ import {
   StyledMainContent,
   StyledTabs,
   StyledCanvasAndTools,
+  StyledCanvasWrapper,
+  StyledToolsBarContainer,
 } from './App.styled';
 
 const App = () => {
@@ -331,14 +333,20 @@ const App = () => {
               <Tabs toggleMainMenu={toggleMainMenu} />
             </StyledTabs>
           )}
-          <StyledCanvasAndTools
-            className="FIE_editor-content"
-            showTabsDrawer={showTabsDrawer}
-          >
-            <MainCanvas />
-            {!showCanvasOnly && <ToolsBar isPhoneScreen={isPhoneScreen} />}
+
+          <StyledCanvasAndTools showTabsDrawer={showTabsDrawer}>
+            <StyledCanvasWrapper>
+              <MainCanvas />
+            </StyledCanvasWrapper>
+
+            {!showCanvasOnly && (
+              <StyledToolsBarContainer>
+                <ToolsBar isPhoneScreen={isPhoneScreen} />
+              </StyledToolsBarContainer>
+            )}
           </StyledCanvasAndTools>
         </StyledMainContent>
+
       )}
     </>
   );

@@ -35,13 +35,13 @@ const StyledTopbar = styled.div`
 const StyledMainButtonsWrapper = styled.div`
   display: flex;
   align-items: center;
-  order: 1;
+  order: 3;
 `;
 
 const StyledControlButtonsWrapper = styled.div`
   display: flex;
   align-items: center;
-  order: 3;
+  order: 1;
   gap: 4px;
 `;
 
@@ -52,7 +52,7 @@ const StyledHistoryButton = styled(IconButton)`
     border-right: 1px solid #dedede;
     padding-right: 10px;
     padding-left: 10px;
-      padding-top: 6px;
+    padding-top: 6px;
     padding-bottom: 6px;
     border-radius: 0px;
   }
@@ -124,7 +124,7 @@ const StyledFlexCenterAlignedContainer = styled.div`
   height: 32px;
   display: block;
   width: 100%;
-  order: 4;
+  order: 2;
   ${({ reverseDirection }) =>
     reverseDirection ? "flex-direction: row-reverse" : ""};
 
@@ -136,7 +136,7 @@ const StyledFlexCenterAlignedContainer = styled.div`
     order: 2;
   }
 `;
-//  PERCENTAGE LABEL
+
 const StyledZoomPercentageLabel = styled(Label)`
   cursor: pointer;
   color: black;
@@ -179,7 +179,6 @@ const StyledResizeOnSaveLabel = styled(Label)`
 
 const StyledHistoryButtons = styled.div`
   display: flex;
-  // gap: 6px;
   border: 1px solid #dedede;
   border-radius: 20px;
 `;
